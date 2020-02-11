@@ -202,7 +202,7 @@ Part of the material for this exercise was taken from:
  1. Add the file "./code/my_first_rmd.rmd" to this project in the root
  1. Commit you changes in the `Git` panel of the `Development` window
      Make sure the following has been run:
-     devtools::devtools::install_github("uashogeschoolutrecht/gitr")
+     devtools::install_github("uashogeschoolutrecht/gitr")
      gitr::set_git_user("<insert e-mail>", "<insert username")
  1. Push the commit to you remote repository on Github
  1. Look at the online (remote) version of the repo
