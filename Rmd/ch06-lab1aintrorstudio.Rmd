@@ -206,6 +206,8 @@ Part of the material for this exercise was taken from:
  1. Now go back to the 'Perceptor' RStudio project
  1. Add the following code to your "my_first_rmd.Rmd" in a code chunk at the end.
  ```{r, eval = FALSE}
+ library(tidyverse)
+ 
  beaver_telemetry <- datasets::beaver1 %>% 
         ggplot(aes(x = time, y = temp)) +
         geom_point(aes(colour = as_factor(activ))) +
