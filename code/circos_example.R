@@ -5,6 +5,8 @@ library(stats)
 require("circlize") || utils::install.packages("circlize")
 library(circlize) 
 
+### this is a comment
+
 # dend: as dendrogram object, usually returned by hclust and as.dendrogram
 # maxy: maximum height of the tree
 circos.dendrogram = function(dend, maxy) {
