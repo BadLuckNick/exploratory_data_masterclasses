@@ -201,11 +201,16 @@ Part of the material for this exercise was taken from:
  1. From this repository, create a new RStudio Project on the server
  1. Add the file "./code/my_first_rmd.rmd" to this project in the root
  1. Commit you changes in the `Git` panel of the `Development` window
+     Make sure the following has been run:
+     devtools::devtools::install_github("uashogeschoolutrecht/gitr")
+     gitr::set_git_user("<insert e-mail>", "<insert username")
  1. Push the commit to you remote repository on Github
  1. Look at the online (remote) version of the repo
  1. Now go back to the 'Perceptor' RStudio project
  1. Add the following code to your "my_first_rmd.Rmd" in a code chunk at the end.
  ```{r, eval = FALSE}
+ library(tidyverse)
+ 
  beaver_telemetry <- datasets::beaver1 %>% 
         ggplot(aes(x = time, y = temp)) +
         geom_point(aes(colour = as_factor(activ))) +
